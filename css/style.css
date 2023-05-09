@@ -19,6 +19,71 @@ a {
   text-decoration: none;
 }
 
+
+h1 {
+  color: #f4f7fb;
+  text-align: center;
+  font-size: 5rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+.container {
+  color: #fff;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/login\ image.jpeg) no-repeat center center/cover;
+}
+
+input {
+  outline: none;
+  padding: 1em 2em;
+  font-size: 1rem;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #fff;
+}
+input::-moz-placeholder {
+  color: #fff;
+}
+input::placeholder {
+  color: #fff;
+}
+
+.login {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.login__btn {
+  background-color: #000;
+  color: #fff;
+  padding: 1em 2em;
+  border-radius: 5px;
+  margin: 1.5em;
+  text-align: center;
+}
+.login__paragraph {
+  margin: 0.5em 0;
+  color: lightgray;
+}
+.login__email {
+  padding: 1em;
+}
+.login__password {
+  padding: 1em;
+=======
 .nav {
   background-color: #f4f7fb;
 }

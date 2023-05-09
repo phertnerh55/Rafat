@@ -1,0 +1,62 @@
+@use "../../utilities/mixins" as *;
+@use "../../utilities/variables" as *;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h1{
+    color: $light-gray;
+    text-align: center;
+    font-size: 5rem;
+}
+p{
+    font-size: 1rem;
+}
+.container{
+    color: $white;
+    width: 90%;
+    margin: 0 auto;
+    @include flex(space-between,center);
+}
+body{
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)) ,url(/images/login\ image.jpeg) no-repeat center center/cover;
+    // background-image: url(/images/login\ image.jpeg);
+    // background-repeat: no-repeat;
+    // background-position: center;
+    // background-size: cover;
+}
+input{
+    outline: none;
+    padding: 1em 2em;
+    font-size: 1rem;
+    border-radius: 5px;
+    background-color: transparent;
+    color: $white;
+    &::placeholder{
+        color: $white;
+    }
+}
+.login{
+    height:100vh;
+    @include flex (center,center);
+    &__btn{
+        background-color: $black;
+        color: $white;
+        padding: 1em 2em;
+        border-radius: 5px;
+        margin: 1.5em;
+        text-align: center;
+    }
+    &__paragraph{
+        margin: 0.5em 0;
+        color: lightgray;
+    }
+    &__email{
+        padding: 1em;
+    }
+    &__password{
+        padding: 1em;
+    }
+}
+
