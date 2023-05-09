@@ -1,2 +1,21 @@
 @use "../../utilities/variables" as *;
 @use "../../utilities/mixins" as *;
+.programmes{
+    &__container{
+        @include flex(space-between, flex-start);
+        
+    }
+    &__power{
+        width: 31%;
+    }
+}
+.sponsorshipImg{
+    height: 250px;
+    width: 500px;
+}
+.sponsorshipImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
