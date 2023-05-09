@@ -19,6 +19,11 @@ a {
   text-decoration: none;
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
 h1 {
   color: #f4f7fb;
@@ -84,7 +89,8 @@ input::placeholder {
 }
 .login__password {
   padding: 1em;
-=======
+}
+
 .nav {
   background-color: #f4f7fb;
 }
@@ -92,13 +98,13 @@ input::placeholder {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-direction: row;
+  flex-direction: column;
 }
 .nav__right ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-direction: row;
+  flex-direction: column;
 }
 .nav__right ul li {
   padding: 2em;
