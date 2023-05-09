@@ -16,3 +16,39 @@ ul li {
 a {
   text-decoration: none;
 }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  margin: 1em 1em;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+input {
+  outline: none;
+  padding: 1em 2em;
+  font-size: 1rem;
+}
+
+.login__btn {
+  background-color: #000;
+  color: #fff;
+  padding: 1em 2em;
+  border-radius: 5px;
+  margin: 1.5em;
+}
+.login__paragraph {
+  margin: 0.5em 0;
+}

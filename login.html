@@ -7,11 +7,14 @@
     <title>login</title>
   </head>
   <body>
-    <h1>Welcome to Rafat</h1>
-    <p>Enter the information you entered while signing up!</p>
-    <div>
+    <div class="container">
+    <div class="flex-div">
+      <h1>Welcome to Rafat</h1>
+      <p class="login__paragraph">Enter the information you entered while signing up!</p>
+    </div>
+    <div class="login__email">
       <p>Email:</p>
-      <input type="email" placeholder="Enter you email" name="Email" id="#" />
+      <input type="email" placeholder="Enter you email" name="Email" id="#" class="login__email__input" />
     </div>
     <div>
       <p>Password:</p>
@@ -19,9 +22,10 @@
         type="password"
         placeholder="Enter your password"
         name="password"
-        id="#"
+        id="#" class="login__password__input"
       />
     </div>
-    <button>Sign Up</button>
+    <button class="login__btn">Log in</button>
+    </div>
   </body>
 </html>
