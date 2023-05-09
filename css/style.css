@@ -27,7 +27,7 @@ a {
   flex-direction: column;
 }
 .login__section {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/contact.jpg) no-repeat center center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 50, 6, 0.7)), url(/images/contact.jpg) no-repeat center center/cover;
   color: #fff;
 }
 .login__section p {
@@ -53,7 +53,7 @@ a {
   color: #fff;
 }
 .login__btn {
-  background-color: orangered;
+  background-color: rgb(23, 189, 50);
   font-size: 1rem;
   padding: 1em 2em;
   border-radius: 5px;
@@ -62,7 +62,7 @@ a {
   text-align: center;
 }
 .login__btn button {
-  background-color: orangered;
+  background-color: rgb(23, 189, 50);
   color: #000;
   border: none;
 }
@@ -74,7 +74,7 @@ a {
   padding: 1em;
 }
 .login form {
-  background-color: rgba(204, 76, 25, 0.3);
+  background-color: rgba(64, 205, 25, 0.3);
   width: 40%;
 }
 
@@ -91,8 +91,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  flex-direction: row;
+  flex-direction: column;
   margin: 1em;
 }
 .nav__right ul li {
@@ -137,7 +136,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-direction: row;
+  flex-direction: column;
 }
 .about-us h1 {
   color: #008000;
@@ -170,7 +169,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  flex-direction: row;
+  flex-direction: column;
 }
 .programmes__power {
   width: 31%;

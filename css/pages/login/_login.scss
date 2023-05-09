@@ -8,7 +8,7 @@
     height:100vh;
     @include flex (center,center);
     &__section{
-        background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0, 0.7)) ,url(/images/contact.jpg) no-repeat center center/cover;
+        background: linear-gradient(rgba(0,0,0,0.7), rgba(0, 50, 6, 0.7)) ,url(/images/contact.jpg) no-repeat center center/cover;
         color: $white;
         p{
             font-size: 1.5rem;
@@ -34,7 +34,7 @@
 
 
     &__btn{
-        background-color: orangered;
+        background-color: rgb(23, 189, 50);
         font-size: 1rem;
         padding: 1em 2em;
         border-radius: 5px;
@@ -42,7 +42,7 @@
         margin:2em auto;
         text-align: center;
         button{
-            background-color: orangered;
+            background-color: rgb(23, 189, 50);
             color: $black;
             border: none;
         }
@@ -55,7 +55,7 @@
         padding: 1em;
     }
     form{
-        background-color: rgba(204, 76, 25, 0.3);
+        background-color: rgba(64, 205, 25, 0.3);
         width:40% ;
     }
 
