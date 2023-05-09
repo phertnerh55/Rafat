@@ -3,24 +3,28 @@
 
 .nav {
   background-color: $light-gray;
+  
   &__container {
     @include flex(space-between, center);
   }
-  &__right{
+  &__right {
     ul {
-    @include flex(space-between,center);
-    li{
+      @include flex(space-between, center);
+      margin: 1em;
+      li {
         padding: 2em;
         font-size: 1rem;
-        a{
-            color: $black;
+        a {
+          color: $black;
         }
-            &:hover{
-                background-color:g;
-                color:$white;
-            }
-        
+        &:hover {
+          background-color: $greenyellow;
+          a{
+            color: $green;
+          }
+          
+        }
+      }
     }
-}
   }
 }
