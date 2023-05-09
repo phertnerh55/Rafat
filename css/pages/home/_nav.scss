@@ -1,0 +1,26 @@
+@use "../../utilities/mixins" as *;
+@use "../../utilities/variables" as *;
+
+.nav {
+  background-color: $light-gray;
+  &__container {
+    @include flex(space-between, center);
+  }
+  &__right{
+    ul {
+    @include flex(space-between,center);
+    li{
+        padding: 2em;
+        font-size: 1rem;
+        a{
+            color: $black;
+        }
+            &:hover{
+                background-color:g;
+                color:$white;
+            }
+        
+    }
+}
+  }
+}

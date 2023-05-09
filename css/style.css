@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Ysabeau:wght@400;700&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Ysabeau", sans-serif;
 }
 
 .container {
@@ -17,11 +19,6 @@ a {
   text-decoration: none;
 }
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
 
 h1 {
   color: #f4f7fb;
@@ -86,4 +83,30 @@ input::placeholder {
 }
 .login__password {
   padding: 1em;
+=======
+.nav {
+  background-color: #f4f7fb;
+}
+.nav__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.nav__right ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.nav__right ul li {
+  padding: 2em;
+  font-size: 1rem;
+}
+.nav__right ul li a {
+  color: #000;
+}
+.nav__right ul li:hover {
+  background-color: g;
+  color: #fff;
 }
