@@ -1,9 +1,5 @@
 @use "../../utilities/mixins" as *;
 @use "../../utilities/variables" as *;
-
-
-
-
 .login{
     height:100vh;
     @include flex (center,center);

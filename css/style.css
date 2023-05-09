@@ -188,3 +188,62 @@ a {
   -o-object-position: center center;
      object-position: center center;
 }
+
+.signup {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.signup__section {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 50, 6, 0.7)), url(/images/img-4.jpg) no-repeat center center/cover;
+  color: #fff;
+}
+.signup__section p {
+  font-size: 1.5rem;
+}
+.signup__section h1 {
+  font-size: 5rem;
+}
+.signup__email input, .signup__password input {
+  outline: none;
+  padding: 1em 2em;
+  font-size: 1rem;
+  border-radius: 5px;
+  width: 100%;
+  background-color: transparent;
+  color: #fff;
+  margin-top: 1em;
+}
+.signup__email input::-moz-placeholder, .signup__password input::-moz-placeholder {
+  color: #fff;
+}
+.signup__email input::placeholder, .signup__password input::placeholder {
+  color: #fff;
+}
+.signup__btn {
+  background-color: rgb(23, 189, 50);
+  font-size: 1rem;
+  padding: 1em 2em;
+  border-radius: 5px;
+  width: 20%;
+  margin: 2em auto;
+  text-align: center;
+}
+.signup__btn button {
+  background-color: rgb(23, 189, 50);
+  color: #000;
+  border: none;
+}
+.signup__paragraph {
+  margin: 0.5em 0;
+  color: lightgray;
+}
+.signup__email, .signup__password {
+  padding: 1em;
+}
+.signup form {
+  background-color: rgba(10, 224, 107, 0.3);
+  width: 40%;
+}
