@@ -21,10 +21,6 @@ p{
 }
 body{
     background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)) ,url(/images/login\ image.jpeg) no-repeat center center/cover;
-    // background-image: url(/images/login\ image.jpeg);
-    // background-repeat: no-repeat;
-    // background-position: center;
-    // background-size: cover;
 }
 input{
     outline: none;
@@ -42,6 +38,7 @@ input{
     @include flex (center,center);
     &__btn{
         background-color: $black;
+        font-size: 1rem;
         color: $white;
         padding: 1em 2em;
         border-radius: 5px;
