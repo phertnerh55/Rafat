@@ -1,6 +1,0 @@
-@use "../utilities/mixins" as *;
-.nav {
-  &__container {
-    @include flex(space-between,center);
-  }
-}
