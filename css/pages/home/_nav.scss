@@ -19,6 +19,9 @@
         }
         &:hover {
           background-color: $greenyellow;
+          a{
+            color: $green;
+          }
           
         }
       }

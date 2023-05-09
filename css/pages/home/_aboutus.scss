@@ -1,0 +1,36 @@
+@use "../../utilities/mixins" as *;
+@use "../../utilities/variables" as *;
+.about-us {
+  margin: 3rem;
+  text-align: center;
+  &__container{
+    @include flex(space-between,center);
+}
+  h1 {
+    color: $green;
+    font-size: 3rem;
+  }
+  &__left{
+    background-color: $light-gray;
+    padding:4em ;
+    margin:4em ;
+    line-height: 2;
+  }
+}
+.card {
+    h3{
+        color: $green;
+    }
+  &__mission{
+    background-color: $light-gray;
+    padding: 2em;
+    margin: 1em;
+    border-radius: 7px;
+  }
+  &__vision {
+    background-color: $light-gray;
+    padding: 2em;
+    margin: 1em;
+    border-radius: 7px;
+  }
+}
