@@ -18,3 +18,30 @@ ul li {
 a {
   text-decoration: none;
 }
+
+.nav {
+  background-color: #f4f7fb;
+}
+.nav__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.nav__right ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.nav__right ul li {
+  padding: 2em;
+  font-size: 1rem;
+}
+.nav__right ul li a {
+  color: #000;
+}
+.nav__right ul li:hover {
+  background-color: g;
+  color: #fff;
+}
