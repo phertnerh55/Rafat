@@ -5,6 +5,7 @@
     @include flex-col(center,center);
     &__section{
         background: linear-gradient(rgba(0,0,0,0.7), rgba(0, 0, 0, 0.8)) ,url(/images/donation3.jpg) no-repeat center center/cover;
+        background-attachment: fixed;
         color: $white;
         height: 100vh;
         p{
@@ -13,6 +14,7 @@
         h1{
             font-size: 5rem;
         }
+        margin-top: 6em;
           
 }
 &__name input,&__email input,&__comment input{
@@ -76,8 +78,9 @@
             padding: 0.5em;
             margin: 1em;
             background: transparent;
-            color: $black;
+            color: $light-green;
             outline: none;
+            font-size: 1.3rem;
         }
         }
      
