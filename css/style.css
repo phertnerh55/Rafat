@@ -27,7 +27,8 @@ a {
   flex-direction: column;
 }
 .login__section {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 6, 0.7)), url(/images/contact.jpg) no-repeat center center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 6, 0.7)),
+    url(/images/contact.jpg) no-repeat center center/cover;
   color: #fff;
 }
 .login__section p {
@@ -36,7 +37,8 @@ a {
 .login__section h1 {
   font-size: 5rem;
 }
-.login__email input, .login__password input {
+.login__email input,
+.login__password input {
   outline: none;
   padding: 1em 2em;
   font-size: 1rem;
@@ -47,10 +49,12 @@ a {
   color: #fff;
   margin-top: 1em;
 }
-.login__email input::-moz-placeholder, .login__password input::-moz-placeholder {
+.login__email input::-moz-placeholder,
+.login__password input::-moz-placeholder {
   color: #fff;
 }
-.login__email input::placeholder, .login__password input::placeholder {
+.login__email input::placeholder,
+.login__password input::placeholder {
   color: #fff;
 }
 .login__btn {
@@ -78,7 +82,8 @@ a {
   margin: 0.5em 0;
   color: lightgray;
 }
-.login__email, .login__password {
+.login__email,
+.login__password {
   padding: 1em;
 }
 .login form {
@@ -125,7 +130,8 @@ a {
 }
 
 .hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../../images/background.jpg") no-repeat center center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../../images/background.jpg") no-repeat center center/cover;
   width: 100%;
   height: 100%;
   text-align: center;
@@ -200,9 +206,28 @@ a {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -o-object-position: center center;
-     object-position: center center;
+  object-position: center center;
+}
+
+.donation {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.donation__section {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 6, 0.7)),
+    url(/images/donation3.jpg) no-repeat center center/cover;
+  color: #fff;
+}
+.donation__section p {
+  font-size: 1.5rem;
+}
+.donation__section h1 {
+  font-size: 5rem;
 }
 
 .signup {
@@ -213,7 +238,8 @@ a {
   flex-direction: column;
 }
 .signup__section {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 50, 6, 0.7)), url(/images/img-4.jpg) no-repeat center center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 50, 6, 0.7)),
+    url(/images/img-4.jpg) no-repeat center center/cover;
   color: #fff;
 }
 .signup__section p {
@@ -222,7 +248,8 @@ a {
 .signup__section h1 {
   font-size: 5rem;
 }
-.signup__email input, .signup__password input {
+.signup__email input,
+.signup__password input {
   outline: none;
   padding: 1em 2em;
   font-size: 1rem;
@@ -233,10 +260,12 @@ a {
   color: #fff;
   margin-top: 1em;
 }
-.signup__email input::-moz-placeholder, .signup__password input::-moz-placeholder {
+.signup__email input::-moz-placeholder,
+.signup__password input::-moz-placeholder {
   color: #fff;
 }
-.signup__email input::placeholder, .signup__password input::placeholder {
+.signup__email input::placeholder,
+.signup__password input::placeholder {
   color: #fff;
 }
 .signup__btn {
@@ -265,7 +294,8 @@ a {
   margin: 0.5em 0;
   color: lightgray;
 }
-.signup__email, .signup__password {
+.signup__email,
+.signup__password {
   padding: 1em;
 }
 .signup form {
