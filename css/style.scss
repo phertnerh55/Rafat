@@ -8,8 +8,12 @@
 @use "./pages/home/_hero";
 @use "./pages/home/aboutus";
 @use "./pages/home/programmes";
+
+@use "./pages/donation/donation";
+
 @use "./pages/home/testimonials";
 @use "./pages/home/footer";
+
 
 @use "pages/signup/signup";
 @import url('https://fonts.googleapis.com/css2?family=Ysabeau:wght@400;700&display=swap');

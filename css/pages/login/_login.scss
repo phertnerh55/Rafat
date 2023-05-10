@@ -1,14 +1,11 @@
 @use "../../utilities/mixins" as *;
 @use "../../utilities/variables" as *;
 
-
-
-
 .login{
     height:100vh;
     @include flex (center,center);
     &__section{
-        background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0, 0.7)) ,url(/images/contact.jpg) no-repeat center center/cover;
+        background: linear-gradient(rgba(0,0,0,0.7), rgba(0, 0, 6, 0.7)) ,url(/images/contact.jpg) no-repeat center center/cover;
         color: $white;
         p{
             font-size: 1.5rem;
@@ -21,7 +18,8 @@
         outline: none;
         padding: 1em 2em;
         font-size: 1rem;
-        border-radius: 5px;
+        border:none;
+        box-shadow: 0px 0px 3px $very-light-gray;
         width: 100%;
         background-color: transparent;
         color: $white;
@@ -34,7 +32,7 @@
 
 
     &__btn{
-        background-color: orangered;
+        background-color: white;
         font-size: 1rem;
         padding: 1em 2em;
         border-radius: 5px;
@@ -42,10 +40,18 @@
         margin:2em auto;
         text-align: center;
         button{
-            background-color: orangered;
+            background-color: white;
             color: $black;
             border: none;
         }
+        &:hover{
+            background-color: rgb(23, 189, 50);
+            cursor: pointer;
+            button{
+                background-color: rgb(23, 189, 50);
+            }
+        }
+        
         }
     &__paragraph{
         margin: 0.5em 0;
@@ -55,9 +61,18 @@
         padding: 1em;
     }
     form{
-        background-color: rgba(204, 76, 25, 0.3);
+        border-radius: 5px;
+        background-color: rgba(64, 205, 25, 0.3);
         width:40% ;
+        padding: 1em;
+        .to__login{
+            text-align: center;
+            a{
+                color: $light-green;
+            }
+        }
+        }
+        
     }
 
 
-}
