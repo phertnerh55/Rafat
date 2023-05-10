@@ -27,7 +27,7 @@ a {
   flex-direction: column;
 }
 .login__section {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 50, 6, 0.7)), url(/images/contact.jpg) no-repeat center center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 6, 0.7)), url(/images/contact.jpg) no-repeat center center/cover;
   color: #fff;
 }
 .login__section p {
@@ -224,12 +224,10 @@ a {
 }
 .signup__btn {
   background-color: rgb(23, 189, 50);
-  font-size: 1rem;
-  padding: 1em 2em;
+  padding: 0 2em;
   border-radius: 5px;
-  width: 20%;
+  width: 15%;
   margin: 2em auto;
-  text-align: center;
 }
 .signup__btn button {
   background-color: rgb(23, 189, 50);
@@ -245,5 +243,6 @@ a {
 }
 .signup form {
   background-color: rgba(10, 224, 107, 0.3);
-  width: 40%;
+  width: 60%;
+  margin-top: 2em;
 }
