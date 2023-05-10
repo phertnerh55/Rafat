@@ -54,9 +54,7 @@
                 background-color: rgb(23, 189, 50);
             }
         }
-        &__link{
-            color: $light-green;
-        }
+        
         }
     &__paragraph{
         margin: 0.5em 0;
@@ -66,10 +64,18 @@
         padding: 1em;
     }
     form{
+        border-radius: 5px;
         background-color: rgba(64, 205, 25, 0.3);
         width:40% ;
+        padding: 1em;
+        .to__login{
+            text-align: center;
+            a{
+                color: $light-green;
+            }
         }
+        }
+        
     }
 
 
-}

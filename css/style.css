@@ -82,10 +82,15 @@ a {
   padding: 1em;
 }
 .login form {
+  border-radius: 5px;
   background-color: rgba(64, 205, 25, 0.3);
   width: 40%;
+  padding: 1em;
 }
-.login form a {
+.login form .to__login {
+  text-align: center;
+}
+.login form .to__login a {
   color: rgb(23, 189, 50);
 }
 
@@ -221,7 +226,8 @@ a {
   outline: none;
   padding: 1em 2em;
   font-size: 1rem;
-  border-radius: 5px;
+  border: none;
+  box-shadow: 0 0 3px;
   width: 100%;
   background-color: transparent;
   color: #fff;
@@ -246,6 +252,7 @@ a {
   background-color: white;
   color: #000;
   border: none;
+  cursor: pointer;
 }
 .signup__btn:hover {
   background-color: rgb(23, 189, 50);
@@ -262,7 +269,15 @@ a {
   padding: 1em;
 }
 .signup form {
+  border-radius: 5px;
   background-color: rgba(10, 224, 107, 0.3);
   width: 50%;
   margin-top: 2em;
+  padding: 1em;
+}
+.signup form .to__signup {
+  text-align: center;
+}
+.signup form .to__signup a {
+  color: rgb(23, 189, 50);
 }
