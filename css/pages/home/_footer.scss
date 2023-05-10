@@ -1,2 +1,14 @@
 @use "../../utilities/mixins" as *;
 @use "../../utilities/variables" as *;
+.footer {
+  background-color: $light-green;
+  text-align: center;
+  &__icons {
+    @include flex(center, center);
+  }
+  &__icon {
+    padding: 1em;
+    margin: 1em;
+    border-radius: 50%;
+  }
+}

@@ -242,3 +242,19 @@ a {
   -o-object-position: top center;
      object-position: top center;
 }
+
+.footer {
+  background-color: rgb(23, 189, 50);
+  text-align: center;
+}
+.footer__icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.footer__icon {
+  padding: 1em;
+  margin: 1em;
+  border-radius: 50%;
+}
