@@ -40,7 +40,8 @@ a {
   outline: none;
   padding: 1em 2em;
   font-size: 1rem;
-  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 0px 3px rgb(207, 200, 200);
   width: 100%;
   background-color: transparent;
   color: #fff;
@@ -53,7 +54,7 @@ a {
   color: #fff;
 }
 .login__btn {
-  background-color: rgb(23, 189, 50);
+  background-color: white;
   font-size: 1rem;
   padding: 1em 2em;
   border-radius: 5px;
@@ -62,9 +63,16 @@ a {
   text-align: center;
 }
 .login__btn button {
-  background-color: rgb(23, 189, 50);
+  background-color: white;
   color: #000;
   border: none;
+}
+.login__btn:hover {
+  background-color: rgb(23, 189, 50);
+  cursor: pointer;
+}
+.login__btn:hover button {
+  background-color: rgb(23, 189, 50);
 }
 .login__paragraph {
   margin: 0.5em 0;
@@ -76,6 +84,9 @@ a {
 .login form {
   background-color: rgba(64, 205, 25, 0.3);
   width: 40%;
+}
+.login form a {
+  color: rgb(23, 189, 50);
 }
 
 .nav {
@@ -223,16 +234,25 @@ a {
   color: #fff;
 }
 .signup__btn {
-  background-color: rgb(23, 189, 50);
-  padding: 0 2em;
+  background-color: white;
+  font-size: 1rem;
+  padding: 1em 2em;
   border-radius: 5px;
-  width: 15%;
+  width: 20%;
   margin: 2em auto;
+  text-align: center;
 }
 .signup__btn button {
-  background-color: rgb(23, 189, 50);
+  background-color: white;
   color: #000;
   border: none;
+}
+.signup__btn:hover {
+  background-color: rgb(23, 189, 50);
+  cursor: pointer;
+}
+.signup__btn:hover button {
+  background-color: rgb(23, 189, 50);
 }
 .signup__paragraph {
   margin: 0.5em 0;
@@ -243,6 +263,6 @@ a {
 }
 .signup form {
   background-color: rgba(10, 224, 107, 0.3);
-  width: 60%;
+  width: 50%;
   margin-top: 2em;
 }

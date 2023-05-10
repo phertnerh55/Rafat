@@ -21,7 +21,8 @@
         outline: none;
         padding: 1em 2em;
         font-size: 1rem;
-        border-radius: 5px;
+        border:none;
+        box-shadow: 0px 0px 3px $very-light-gray;
         width: 100%;
         background-color: transparent;
         color: $white;
@@ -34,7 +35,7 @@
 
 
     &__btn{
-        background-color: rgb(23, 189, 50);
+        background-color: white;
         font-size: 1rem;
         padding: 1em 2em;
         border-radius: 5px;
@@ -42,9 +43,19 @@
         margin:2em auto;
         text-align: center;
         button{
-            background-color: rgb(23, 189, 50);
+            background-color: white;
             color: $black;
             border: none;
+        }
+        &:hover{
+            background-color: rgb(23, 189, 50);
+            cursor: pointer;
+            button{
+                background-color: rgb(23, 189, 50);
+            }
+        }
+        &__link{
+            color: $light-green;
         }
         }
     &__paragraph{
@@ -57,6 +68,7 @@
     form{
         background-color: rgba(64, 205, 25, 0.3);
         width:40% ;
+        }
     }
 
 
