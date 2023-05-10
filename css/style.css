@@ -24,7 +24,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
 }
 .login__section {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/contact.jpg) no-repeat center center/cover;
@@ -85,13 +85,12 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
 }
 .nav__right ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   flex-direction: row;
   margin: 1em;
 }
@@ -166,6 +165,14 @@ a {
   border-radius: 7px;
 }
 
+.programmes h2 {
+  color: #008000;
+  font-size: 2rem;
+  text-align: center;
+}
+.programmes p {
+  text-align: center;
+}
 .programmes__container {
   display: flex;
   justify-content: space-between;
@@ -174,13 +181,22 @@ a {
 }
 .programmes__power {
   width: 31%;
+  height: 650px;
+  margin: 2em 0;
+  padding: 1em;
+  background-color: #f4f7fb;
+  border-radius: 6px;
+  box-shadow: 0px 0px 10px #000;
+}
+.programmes__power h3 {
+  margin: 1em;
+  color: rgb(23, 189, 50);
 }
 
 .sponsorshipImg {
   height: 250px;
-  width: 500px;
+  width: 100%;
 }
-
 .sponsorshipImg img {
   width: 100%;
   height: 100%;
@@ -188,4 +204,5 @@ a {
      object-fit: cover;
   -o-object-position: center center;
      object-position: center center;
+  padding-bottom: 1em;
 }
