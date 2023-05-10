@@ -3,6 +3,10 @@
 
 .nav {
   background-color: $light-gray;
+  position: fixed;
+  width: 100%;
+  top: 0;
+
   
   &__container {
     @include flex(space-between, center);
