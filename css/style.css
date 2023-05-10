@@ -233,8 +233,10 @@ a {
 }
 .donation__section {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url(/images/donation3.jpg) no-repeat center center/cover;
+  background-attachment: fixed;
   color: #fff;
   height: 100vh;
+  margin-top: 6em;
 }
 .donation__section p {
   font-size: 1.5rem;
@@ -307,8 +309,9 @@ a {
   padding: 0.5em;
   margin: 1em;
   background: transparent;
-  color: #000;
+  color: rgb(23, 189, 50);
   outline: none;
+  font-size: 1.3rem;
 }
 
 .testimonials h2 {
@@ -451,7 +454,9 @@ a {
 }
 .signup__section {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 50, 6, 0.7)), url(/images/img-4.jpg) no-repeat center center/cover;
+  background-attachment: fixed;
   color: #fff;
+  margin-top: 6em;
 }
 .signup__section p {
   font-size: 1.5rem;
