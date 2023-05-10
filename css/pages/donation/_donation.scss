@@ -2,8 +2,8 @@
 @use "../../utilities/variables" as *;
 .donation{
     height: 100vh;
-    text-align: center;
     &__section{
+        @include flex-col(center,center);
         background: linear-gradient(rgba(0,0,0,0.7), rgba(0, 0, 0, 0.8)) ,url(/images/donation3.jpg) no-repeat center center/cover;
         background-attachment: fixed;
         color: $white;
@@ -58,7 +58,6 @@
     form{
         border-radius: 5px;
         background-color:$dark-green;
-        width:40% ;
         padding: 1em;
         margin: 1em;
         textarea{
@@ -82,8 +81,7 @@
             outline: none;
             font-size: 1.3rem;
         }
-        }
+        
      
 
-
-
+    }
