@@ -7,7 +7,9 @@
   width: 100%;
   top: 0;
 
-  
+  &__left{
+    cursor: pointer;
+  }
   &__container {
     @include flex(space-between, center);
   }

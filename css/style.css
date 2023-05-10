@@ -100,6 +100,9 @@ a {
   width: 100%;
   top: 0;
 }
+.nav__left {
+  cursor: pointer;
+}
 .nav__container {
   display: flex;
   justify-content: space-between;
@@ -229,9 +232,12 @@ a {
 
 .donation {
   height: 100vh;
-  text-align: center;
 }
 .donation__section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url(/images/donation3.jpg) no-repeat center center/cover;
   background-attachment: fixed;
   color: #fff;
@@ -286,7 +292,6 @@ a {
 .donation form {
   border-radius: 5px;
   background-color: rgba(64, 205, 25, 0.3);
-  width: 40%;
   padding: 1em;
   margin: 1em;
 }
