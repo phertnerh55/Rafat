@@ -3,7 +3,7 @@
 
 .login{
     height:100vh;
-    @include flex (center,center);
+    @include flex-col (center,center);
     &__section{
         background: linear-gradient(rgba(0,0,0,0.7), rgba(0, 0, 6, 0.7)) ,url(/images/contact.jpg) no-repeat center center/cover;
         color: $white;
