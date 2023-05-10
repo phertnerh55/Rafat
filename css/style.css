@@ -203,7 +203,7 @@ a {
   height: 650px;
   margin: 2em 0;
   padding: 1em;
-  background-color: #adff2f;
+  background-color: #fff;
   border-radius: 6px;
   box-shadow: 0px 0px 10px #000;
   text-align: left;
@@ -229,10 +229,7 @@ a {
 
 .donation {
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  text-align: center;
 }
 .donation__section {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url(/images/donation3.jpg) no-repeat center center/cover;
@@ -362,6 +359,87 @@ a {
 .footer__icon {
   padding: 1em;
   margin: 0.5em;
+}
+
+.contact {
+  margin-top: 7em;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/images/img-6.jpg") no-repeat center center/cover;
+  height: 100vh;
+}
+.contact__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contact p {
+  font-size: 1.5rem;
+  color: #fff;
+}
+.contact h1 {
+  font-size: 5rem;
+  color: white;
+}
+.contact form {
+  border-radius: 5px;
+  background-color: rgba(64, 205, 25, 0.3);
+  padding: 1em;
+  margin: 1em;
+}
+.contact form textarea {
+  background: transparent;
+  text-align: center;
+  outline: none;
+  font-size: 1rem;
+  color: #fff;
+  border: none;
+  box-shadow: 0 0 3px rgb(207, 200, 200);
+  margin: 1em;
+}
+.contact form textarea::-moz-placeholder {
+  color: #fff;
+}
+.contact form textarea::placeholder {
+  color: #fff;
+}
+.contact__button {
+  background-color: white;
+  font-size: 1rem;
+  padding: 1em 2em;
+  border-radius: 5px;
+  width: 20%;
+  margin: 2em auto;
+  text-align: center;
+}
+.contact__button button {
+  background-color: white;
+  color: #000;
+  border: none;
+}
+.contact__button:hover {
+  background-color: rgb(23, 189, 50);
+  cursor: pointer;
+}
+.contact__button:hover button {
+  background-color: rgb(23, 189, 50);
+  cursor: pointer;
+}
+.contact__name input, .contact__email input, .contact__phone input {
+  outline: none;
+  padding: 1em 2em;
+  font-size: 1rem;
+  border: none;
+  box-shadow: 0px 0px 3px rgb(207, 200, 200);
+  width: 100%;
+  background-color: transparent;
+  color: #fff;
+  margin-top: 1em;
+}
+.contact__name input::-moz-placeholder, .contact__email input::-moz-placeholder, .contact__phone input::-moz-placeholder {
+  color: #fff;
+}
+.contact__name input::placeholder, .contact__email input::placeholder, .contact__phone input::placeholder {
+  color: #fff;
 }
 
 .signup {

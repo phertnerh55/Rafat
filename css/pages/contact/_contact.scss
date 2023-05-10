@@ -1,2 +1,79 @@
 @use "../../utilities/variables" as *;
 @use "../../utilities/mixins" as *;
+.contact {
+  margin-top: 7em;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("/images/img-6.jpg") no-repeat center center/cover;
+
+  height: 100vh;
+  &__container {
+    @include flex-col(center, center);
+  }
+  p {
+    font-size: 1.5rem;
+    color: $white;
+  }
+  h1 {
+    font-size: 5rem;
+    color: white;
+  }
+  form {
+    border-radius: 5px;
+    background-color: $dark-green;
+
+    padding: 1em;
+    margin: 1em;
+    textarea {
+      background: transparent;
+      text-align: center;
+      outline: none;
+      font-size: 1rem;
+      color: $white;
+      border: none;
+      box-shadow: 0 0 3px $very-light-gray;
+      margin: 1em;
+      &::placeholder {
+        color: $white;
+      }
+    }
+  }
+  &__button {
+    background-color: white;
+    font-size: 1rem;
+    padding: 1em 2em;
+    border-radius: 5px;
+    width: 20%;
+    margin: 2em auto;
+    text-align: center;
+    button {
+      background-color: white;
+      color: $black;
+      border: none;
+    }
+
+    &:hover {
+      background-color: $light-green;
+      cursor: pointer;
+      button {
+        background-color: $light-green;
+        cursor: pointer;
+      }
+    }
+  }
+  &__name input,
+  &__email input,
+  &__phone input {
+    outline: none;
+    padding: 1em 2em;
+    font-size: 1rem;
+    border: none;
+    box-shadow: 0px 0px 3px $very-light-gray;
+    width: 100%;
+    background-color: transparent;
+    color: $white;
+    margin-top: 1em;
+    &::placeholder {
+      color: $white;
+    }
+  }
+}

@@ -9,7 +9,6 @@
   <body>
     <header>
       <nav class="nav">
-        <div class="container">
           <div class="nav__container">
             <div class="nav__left">Logo</div>
             <div class="nav__right">
@@ -25,32 +24,42 @@
         </div>
       </nav>
     </header>
-    <div class="container">
-      <div class="contact-container">
+    <section class="contact">
+      <div class="container">
+        <div class="contact__container">
+
         <div>
-          <img src="images/contact.jpg" alt="" width="50%
-          ">
+          <h1>Contact us</h1>
+          <p>Questions, Clarifications, Feedback-we're here for it all.</p>
+          <form action="">
+            <div class="contact__name">
+              <p>Name</p>
+              <input type="text" placeholder="Enter your name" />
+              
+            </div>
+            <div class="contact__email">
+              <p>Email</p>
+              <input type="text" placeholder="Enter your email"/>
+            </div>
+            <div class="contact__phone">
+              <p>Phone</p>
+              <input type="text" placeholder="Enter phone number"/>
+            </div>
+            <div>
+              <textarea
+                name="Message"
+                id=""
+                cols="50"
+                rows="10"
+                placeholder="Message"
+              ></textarea>
+            </div>
+            <div class="contact__button">
+              <button type="submit">Send Message</button>
+            </div>
+          </form>
         </div>
-      <div>
-    <h1>Contact us</h1>
-    <p>Questions, Clarifications, Feedback-we're here for it all.</p>
-    <form action="">
-      <div>
-        <p>Name</p>
-        <input type="text" placeholder="First"/>
-        <input type="text" placeholder="Last">
       </div>
-      <div>
-        <p>Email</p>
-        <input type="text"  /></div>
-      <div>
-        <p>Phone</p>
-        <input type="text" /></div>
-      <div> <textarea name="Message" id="" cols="30" rows="10" placeholder="Message"></textarea></div>
-      <div><button type="submit">Send Message</button></div>
-    </form>
-  </div>
-  </div>
-</div>
+    </section>
   </body>
 </html>
