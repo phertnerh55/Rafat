@@ -378,10 +378,12 @@ a {
 .contact p {
   font-size: 1.5rem;
   color: #fff;
+  text-align: center;
 }
 .contact h1 {
   font-size: 5rem;
   color: white;
+  text-align: center;
 }
 .contact form {
   border-radius: 5px;
@@ -412,12 +414,12 @@ a {
   border-radius: 5px;
   width: 20%;
   margin: 2em auto;
-  text-align: center;
 }
 .contact__button button {
   background-color: white;
   color: #000;
   border: none;
+  text-align: center;
 }
 .contact__button:hover {
   background-color: rgb(23, 189, 50);
