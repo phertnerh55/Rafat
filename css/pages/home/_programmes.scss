@@ -10,11 +10,13 @@
     text-align: center;
   }
   &__container {
-    @include flex(space-between, flex-start);
+    // @include flex(space-between, flex-start);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    gap: 2em;
   }
   &__power {
-    width: 31%;
-    height: 650px;
     margin: 2em 0;
     padding: 1em;
 
@@ -29,7 +31,7 @@
   }
 }
 .sponsorshipImg {
-  height:250px;
+  height: 250px;
   width: 100%;
   img {
     width: 100%;
@@ -37,5 +39,19 @@
     object-fit: cover;
     object-position: center center;
     padding-bottom: 1em;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .programmes {
+    &__container {
+      @include flex-col(wrap, center);
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    &__power {
+      width: 100%;
+    }
   }
 }
