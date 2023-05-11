@@ -97,7 +97,7 @@ a {
 }
 
 .nav {
-  background-color: #f4f7fb;
+  background-color: rgba(211, 211, 211, 0.8705882353);
   position: fixed;
   width: 100%;
   top: 0;
@@ -418,7 +418,7 @@ a {
 .contact__button {
   background-color: white;
   font-size: 1rem;
-  padding: 1em 2em;
+  padding: 1em;
   border-radius: 5px;
   width: 20%;
   margin: 2em auto;
@@ -427,7 +427,6 @@ a {
   background-color: white;
   color: #000;
   border: none;
-  text-align: center;
 }
 .contact__button:hover {
   background-color: rgb(23, 189, 50);
