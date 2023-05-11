@@ -2,7 +2,7 @@
 @use "../../utilities/variables" as *;
 
 .nav {
-  background-color: $gray;
+  background-color:$lightcyan;
   position: fixed;
   width: 100%;
   top: 0;
@@ -18,8 +18,10 @@
       @include flex(space-between, center);
       margin: 1em;
       li {
-        padding: 2em;
+        padding: 1em;
         font-size: 1rem;
+        margin-right: 1em;
+        border-radius: 5px;
         a {
           color: $black;
         }
