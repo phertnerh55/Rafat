@@ -1,6 +1,7 @@
 @use "../../utilities/mixins" as *;
 @use "../../utilities/variables" as *;
 .footer {
+  width: 100%;
   background-color: $lightcyan;
   text-align: center;
   &__icons {

@@ -321,7 +321,6 @@ a {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url(/images/donation3.jpg) no-repeat center center/cover;
   background-attachment: fixed;
   color: #fff;
-  height: 100vh;
   margin-top: 14vh;
 }
 .donation__section p {
@@ -417,6 +416,9 @@ a {
   }
 }
 @media screen and (max-width: 630px) {
+  .donation {
+    min-height: 100vh;
+  }
   .donation__section {
     display: flex;
     justify-content: center;
@@ -427,7 +429,7 @@ a {
     font-size: 2rem;
   }
   .donation__section p {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 }
 .testimonials h2 {
@@ -466,6 +468,7 @@ a {
 }
 
 .footer {
+  width: 100%;
   background-color: rgb(224, 255, 255);
   text-align: center;
 }
