@@ -25,7 +25,6 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 3em;
 }
 .login__section {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 6, 0.7)), url(/images/contact.jpg) no-repeat center center/cover;
@@ -98,9 +97,11 @@ a {
 
 .nav {
   background-color: rgb(224, 255, 255);
+ 
   position: fixed;
   width: 100%;
   top: 0;
+  height: 14vh;
 }
 .nav__left {
   cursor: pointer;
@@ -246,7 +247,7 @@ a {
   background-attachment: fixed;
   color: #fff;
   height: 100vh;
-  margin-top: 6em;
+  margin-top: 14vh;
 }
 .donation__section p {
   font-size: 1.5rem;
@@ -374,7 +375,7 @@ a {
 }
 
 .contact {
-  margin-top: 7em;
+  margin-top: 14vh;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/images/img-6.jpg") no-repeat center center/cover;
   background-attachment: fixed;
   height: 100vh;
@@ -466,7 +467,7 @@ a {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 50, 6, 0.7)), url(/images/img-4.jpg) no-repeat center center/cover;
   background-attachment: fixed;
   color: #fff;
-  margin-top: 6em;
+  margin-top: 14vh;
 }
 .signup__section p {
   font-size: 1.5rem;
