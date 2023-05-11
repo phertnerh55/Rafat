@@ -1,16 +1,17 @@
 <html lang="en">
   <head>
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon" />
     <title>login</title>
   </head>
   <body>
@@ -19,7 +20,7 @@
         <div class="container">
           <div class="nav__container">
             <div class="nav__left">
-              <img src="images/logo.png" alt="organization logo" width="80">
+              <img src="images/logo.png" alt="organization logo" width="80" />
             </div>
             <div class="nav__right">
               <ul>
@@ -34,38 +35,40 @@
           </div>
         </div>
       </nav>
-     </header>
+    </header>
     <section class="login__section">
-        <div class="login">
-          <h1>Login to Rafat</h1>
-          <p class="login__paragraph">
-            Enter the information you entered while signing up!
+      <div class="login">
+        <h1>Login to Rafat</h1>
+        <p class="login__paragraph">
+          Enter the information you entered while signing up!
+        </p>
+        <form>
+          <div class="login__email">
+            <p>Email</p>
+            <input
+              type="email"
+              placeholder="Enter you email"
+              name="Email"
+              id="#"
+              class="login__email__input"
+            />
+          </div>
+          <div class="login__password">
+            <p>Password</p>
+            <input
+              type="password"
+              placeholder="Enter your password"
+              name="password"
+              id="#"
+            />
+          </div>
+          <div class="login__btn">
+            <button><a href="">Log in</a></button>
+          </div>
+          <p class="to__login">
+            Don't have an account? <a href="signup.html">SignUp</a>
           </p>
-          <form>
-            <div class="login__email">
-              <p>Email</p>
-              <input
-                type="email"
-                placeholder="Enter you email"
-                name="Email"
-                id="#"
-                class="login__email__input"
-              />
-            </div>
-            <div class="login__password">
-              <p>Password</p>
-              <input
-                type="password"
-                placeholder="Enter your password"
-                name="password"
-                id="#"
-              />
-            </div>
-            <div class="login__btn">
-              <button><a href="">Log in</a> </button>
-            </div>
-           <p class="to__login">Don't have an account? <a href="signup.html">SignUp</a></p>
-          </form>
+        </form>
       </div>
     </section>
     <footer class="footer">
@@ -85,6 +88,5 @@
         </div>
       </div>
     </footer>
-
   </body>
 </html>
