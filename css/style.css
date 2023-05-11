@@ -151,6 +151,22 @@ a {
   color: #008000;
 }
 
+.nav ul li:last-child {
+  display: none;
+}
+
+/*media queries*/
+@media only screen and (max-width: 700px) {
+  .nav ul li:last-child {
+    display: block;
+  }
+  .nav ul li:not(:last-child) {
+    display: none;
+  }
+  .nav {
+    font-size: 1rem;
+  }
+}
 .hero {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../../images/background.jpg") no-repeat center center/cover;
   width: 100%;
@@ -171,6 +187,15 @@ a {
   text-transform: capitalize;
 }
 
+/*media queries*/
+@media only screen and (max-width: 580px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+}
 .about-us {
   margin: 3rem;
   text-align: center;
@@ -208,6 +233,19 @@ a {
   border-radius: 7px;
 }
 
+/*media queries*/
+@media only screen and (max-width: 1200px) {
+  .about-us__left {
+    margin: 1em;
+    padding: 1em;
+  }
+  .about-us__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+}
 .programmes h2 {
   color: #008000;
   font-size: 2rem;
@@ -217,14 +255,12 @@ a {
   text-align: center;
 }
 .programmes__container {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  gap: 2em;
 }
 .programmes__power {
-  width: 31%;
-  height: 650px;
   margin: 2em 0;
   padding: 1em;
   background-color: #fff;
@@ -251,6 +287,19 @@ a {
   padding-bottom: 1em;
 }
 
+@media only screen and (max-width: 700px) {
+  .programmes__container {
+    display: flex;
+    justify-content: wrap;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .programmes__power {
+    width: 100%;
+  }
+}
 .donation {
   height: 100vh;
 }
