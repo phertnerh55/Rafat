@@ -45,3 +45,20 @@
   }
 }
 
+.nav ul li:last-child{
+  display: none;
+}
+
+/*media queries*/
+@media only screen and (max-width:700px){
+  .nav ul li:last-child{
+  display: block;
+  }
+
+  .nav ul li:not(:last-child){
+    display: none;
+}
+.nav{
+  font-size: 1rem;
+}
+}
