@@ -54,26 +54,22 @@ a {
 .login__email input::placeholder, .login__password input::placeholder {
   color: #fff;
 }
-.login__btn {
-  background-color: white;
-  font-size: 1rem;
-  padding: 1em 2em;
-  border-radius: 5px;
-  width: 20%;
-  margin: 2em auto;
-  text-align: center;
-}
 .login__btn button {
-  background-color: white;
+  background-color: #fff;
+  padding: 1em 2em;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px;
   color: #000;
   border: none;
-}
-.login__btn:hover {
-  background-color: rgb(23, 189, 50);
   cursor: pointer;
 }
-.login__btn:hover button {
+.login__btn button:hover {
   background-color: rgb(23, 189, 50);
+}
+.login__btn button:hover a {
+  color: #fff;
 }
 .login__paragraph {
   margin: 0.5em 0;
@@ -95,13 +91,29 @@ a {
   color: rgb(23, 189, 50);
 }
 
+@media screen and (max-width: 957px) {
+  .login form {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 574px) {
+  .login form {
+    width: 80%;
+  }
+  .login__section h1 {
+    font-size: 3rem;
+  }
+  .login__section p {
+    font-size: 1rem;
+  }
+}
 .nav {
+  background-color: rgb(224, 255, 255);
   background-color: rgb(224, 255, 255);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
   position: fixed;
   width: 100%;
   top: 0;
@@ -242,6 +254,12 @@ a {
 .donation {
   height: 100vh;
 }
+.donation__options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
 .donation__section {
   display: flex;
   justify-content: center;
@@ -251,7 +269,7 @@ a {
   background-attachment: fixed;
   color: #fff;
   height: 100vh;
-  margin-top: 11vh;
+  margin-top: 14vh;
 }
 .donation__section p {
   font-size: 1.5rem;
@@ -268,7 +286,6 @@ a {
   width: 100%;
   background-color: transparent;
   color: #fff;
-  margin-top: 1em;
 }
 .donation__name input::-moz-placeholder, .donation__email input::-moz-placeholder, .donation__comment input::-moz-placeholder {
   color: #fff;
@@ -276,27 +293,22 @@ a {
 .donation__name input::placeholder, .donation__email input::placeholder, .donation__comment input::placeholder {
   color: #fff;
 }
-.donation__button {
-  background-color: white;
-  font-size: 1rem;
-  padding: 1em 2em;
-  border-radius: 5px;
-  width: 20%;
-  margin: 2em auto;
-  text-align: center;
-}
 .donation__button button {
-  background-color: white;
+  background-color: #fff;
+  padding: 1em 2em;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px;
   color: #000;
   border: none;
-}
-.donation__button:hover {
-  background-color: rgb(23, 189, 50);
   cursor: pointer;
 }
-.donation__button:hover button {
+.donation__button button:hover {
   background-color: rgb(23, 189, 50);
-  cursor: pointer;
+}
+.donation__button button:hover a {
+  color: #fff;
 }
 .donation form {
   border-radius: 5px;
@@ -304,14 +316,18 @@ a {
   padding: 1em;
   margin: 1em;
 }
+.donation form p {
+  margin: 1em 0 0.5em 0;
+}
 .donation form textarea {
   background: transparent;
   outline: none;
   font-size: 1rem;
   color: #fff;
   border: none;
+  width: 100%;
   box-shadow: 0 0 3px rgb(207, 200, 200);
-  margin: 1em;
+  margin-bottom: 1em;
 }
 .donation form textarea::-moz-placeholder {
   color: #fff;
@@ -328,6 +344,39 @@ a {
   font-size: 1.3rem;
 }
 
+@media screen and (max-width: 960px) {
+  .donation__options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  .donation__paragraph {
+    text-align: center;
+    margin-bottom: 0.5em;
+  }
+  .donation h1 {
+    text-align: center;
+  }
+  .donation form {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 630px) {
+  .donation__section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .donation__section h1 {
+    font-size: 2rem;
+  }
+  .donation__section p {
+    font-size: 1rem;
+  }
+}
 .testimonials h2 {
   color: #008000;
   font-size: 2em;
@@ -390,6 +439,9 @@ a {
   align-items: center;
   flex-direction: column;
 }
+.contact__container__p {
+  text-align: center !important;
+}
 .contact p {
   font-size: 1.5rem;
   color: #fff;
@@ -424,27 +476,23 @@ a {
 .contact form textarea::placeholder {
   color: #fff;
 }
-.contact__button {
-  background-color: white;
-  font-size: 1rem;
-  padding: 1em;
-  border-radius: 5px;
-  width: 25%;
-  margin: 2em auto;
-  text-align: center;
-}
 .contact__button button {
-  background-color: white;
+  background-color: #fff;
+  padding: 1em 2em;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px;
   color: #000;
   border: none;
-}
-.contact__button:hover {
-  background-color: rgb(23, 189, 50);
+  margin-top: 1em;
   cursor: pointer;
 }
-.contact__button:hover button {
+.contact__button button:hover {
   background-color: rgb(23, 189, 50);
-  cursor: pointer;
+}
+.contact__button button:hover a {
+  color: #fff;
 }
 .contact__name input, .contact__email input, .contact__phone input {
   outline: none;
@@ -463,6 +511,17 @@ a {
   color: #fff;
 }
 
+@media screen and (max-width: 618px) {
+  .contact form {
+    width: 80%;
+  }
+  .contact h1 {
+    font-size: 2rem;
+  }
+  .contact p {
+    font-size: 0.8rem;
+  }
+}
 .signup {
   height: 100vh;
   display: flex;
@@ -499,27 +558,22 @@ a {
 .signup__email input::placeholder, .signup__password input::placeholder {
   color: #fff;
 }
-.signup__btn {
-  background-color: white;
-  font-size: 1rem;
-  padding: 1em 2em;
-  border-radius: 5px;
-  width: 20%;
-  margin: 2em auto;
-  text-align: center;
-}
 .signup__btn button {
-  background-color: white;
+  background-color: #fff;
+  padding: 1em 2em;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px;
   color: #000;
   border: none;
   cursor: pointer;
 }
-.signup__btn:hover {
+.signup__btn button:hover {
   background-color: rgb(23, 189, 50);
-  cursor: pointer;
 }
-.signup__btn:hover button {
-  background-color: rgb(23, 189, 50);
+.signup__btn button:hover a {
+  color: #fff;
 }
 .signup__paragraph {
   margin: 0.5em 0;
@@ -540,4 +594,21 @@ a {
 }
 .signup form .to__signup a {
   color: rgb(23, 189, 50);
+}
+
+@media screen and (max-width: 957px) {
+  .signup form {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 670px) {
+  .signup form {
+    width: 100%;
+  }
+  .signup__section h1 {
+    font-size: 2.5rem;
+  }
+  .signup__section p {
+    font-size: 1rem;
+  }
 }

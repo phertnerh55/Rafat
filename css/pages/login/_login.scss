@@ -1,79 +1,92 @@
 @use "../../utilities/mixins" as *;
 @use "../../utilities/variables" as *;
 
-.login{
-    height:100vh;
-    @include flex-col (center,center);
-    &__section{
-        background: linear-gradient(rgba(0,0,0,0.7), rgba(0, 0, 6, 0.7)) ,url(/images/contact.jpg) no-repeat center center/cover;
-        background-attachment: fixed;
-        color: $white;
-        p{
-            font-size: 1.5rem;
-        }
-        h1{
-            font-size: 5rem;
-        }
+.login {
+  height: 100vh;
+  @include flex-col(center, center);
+  &__section {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 6, 0.7)),
+      url(/images/contact.jpg) no-repeat center center/cover;
+    background-attachment: fixed;
+    color: $white;
+    p {
+      font-size: 1.5rem;
     }
-    &__email input, &__password input{
-        outline: none;
-        padding: 1em 2em;
+    h1 {
+      font-size: 5rem;
+    }
+  }
+  &__email input,
+  &__password input {
+    outline: none;
+    padding: 1em 2em;
+    font-size: 1rem;
+    border: none;
+    box-shadow: 0px 0px 3px $very-light-gray;
+    width: 100%;
+    background-color: transparent;
+    color: $white;
+    margin-top: 1em;
+    &::placeholder {
+      color: $white;
+    }
+  }
+
+  &__btn {
+    button {
+      @include button;
+      cursor: pointer;
+      &:hover {
+        background-color: $light-green;
+        a {
+          color: $white;
+        }
+      }
+    }
+  }
+  &__paragraph {
+    margin: 0.5em 0;
+    color: lightgray;
+  }
+  &__email,
+  &__password {
+    padding: 1em;
+  }
+  form {
+    border-radius: 5px;
+    background-color: rgba(64, 205, 25, 0.3);
+    width: 40%;
+    padding: 1em;
+    .to__login {
+      text-align: center;
+      a {
+        color: $light-green;
+      }
+    }
+  }
+}
+
+// Media queries
+@media screen and (max-width: 957px) {
+  .login {
+    form {
+      width: 60%;
+    }
+  }
+}
+
+@media screen and (max-width: 574px) {
+  .login {
+    form {
+      width: 80%;
+    }
+    &__section {
+      h1 {
+        font-size: 3rem;
+      }
+      p {
         font-size: 1rem;
-        border:none;
-        box-shadow: 0px 0px 3px $very-light-gray;
-        width: 100%;
-        background-color: transparent;
-        color: $white;
-        margin-top: 1em;
-        &::placeholder{
-            color: $white;
-    
+      }
     }
-    }
-
-
-    &__btn{
-        background-color: white;
-        font-size: 1rem;
-        padding: 1em 2em;
-        border-radius: 5px;
-        width: 20%;
-        margin:2em auto;
-        text-align: center;
-        button{
-            background-color: white;
-            color: $black;
-            border: none;
-        }
-        &:hover{
-            background-color: rgb(23, 189, 50);
-            cursor: pointer;
-            button{
-                background-color: rgb(23, 189, 50);
-            }
-        }
-        
-        }
-    &__paragraph{
-        margin: 0.5em 0;
-        color: lightgray;
-    }
-    &__email,  &__password{
-        padding: 1em;
-    }
-    form{
-        border-radius: 5px;
-        background-color: rgba(64, 205, 25, 0.3);
-        width:40% ;
-        padding: 1em;
-        .to__login{
-            text-align: center;
-            a{
-                color: $light-green;
-            }
-        }
-        }
-        
-    }
-
-
+  }
+}

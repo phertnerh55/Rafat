@@ -1,87 +1,120 @@
 @use "../../utilities/mixins" as *;
 @use "../../utilities/variables" as *;
-.donation{
+.donation {
+  height: 100vh;
+  &__options {
+    @include flex(space-between, center);
+  }
+  &__section {
+    @include flex-col(center, center);
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),
+      url(/images/donation3.jpg) no-repeat center center/cover;
+    background-attachment: fixed;
+    color: $white;
     height: 100vh;
-    &__section{
-        @include flex-col(center,center);
-        background: linear-gradient(rgba(0,0,0,0.7), rgba(0, 0, 0, 0.8)) ,url(/images/donation3.jpg) no-repeat center center/cover;
-        background-attachment: fixed;
-        color: $white;
-        height: 100vh;
-        p{
-            font-size: 1.5rem;
-        }
-        h1{
-            font-size: 5rem;
-        }
-        margin-top: 11vh;
-          
-}
-&__name input,&__email input,&__comment input{
+    p {
+      font-size: 1.5rem;
+    }
+    h1 {
+      font-size: 5rem;
+    }
+    margin-top: 14vh;
+  }
+  &__name input,
+  &__email input,
+  &__comment input {
     outline: none;
     padding: 1em 2em;
-        font-size: 1rem;
-        border:none;
-        box-shadow: 0px 0px 3px $very-light-gray;
-        width: 100%;
-        background-color: transparent;
-        color: $white;
-        margin-top: 1em;
-        &::placeholder{
-            color: $white;
-    
-    }
-} 
-&__button{
-    background-color: white;
     font-size: 1rem;
-    padding: 1em 2em;
-    border-radius: 5px;
-    width: 20%;
-    margin:2em auto;
-    text-align: center;
-    button{
-        background-color: white;
-        color: $black;
-        border: none;
+    border: none;
+    box-shadow: 0px 0px 3px $very-light-gray;
+    width: 100%;
+    background-color: transparent;
+    color: $white;
+    // margin-top: 1em;
+    &::placeholder {
+      color: $white;
     }
-    &:hover{
-        background-color:$light-green;
-        cursor: pointer;
-        button{
-            background-color: $light-green;
-            cursor: pointer;
-        }
-    }
-    
-    }
-    form{
-        border-radius: 5px;
-        background-color:$dark-green;
-        padding: 1em;
-        margin: 1em;
-        textarea{
-            background: transparent;
-            outline: none;
-            font-size: 1rem;
-            color: $white;
-            border: none;
-            box-shadow: 0 0 3px $very-light-gray;
-            margin: 1em;
-            &::placeholder{
-                color: $white;
-            }
-        }
-    }
-        select{
-            padding: 0.5em;
-            margin: 1em;
-            background: transparent;
-            color: $light-green;
-            outline: none;
-            font-size: 1.3rem;
-        }
-        
-     
+  }
+  &__button {
+    button {
+      @include button;
+      cursor: pointer;
+      //   margin: 1em 0;
+      &:hover {
+        background-color: $light-green;
 
+        a {
+          color: $white;
+        }
+      }
     }
+  }
+  form {
+    border-radius: 5px;
+    background-color: $dark-green;
+    padding: 1em;
+    margin: 1em;
+    p {
+      margin: 1em 0 0.5em 0;
+    }
+    textarea {
+      background: transparent;
+      outline: none;
+      font-size: 1rem;
+      color: $white;
+      border: none;
+      width: 100%;
+      box-shadow: 0 0 3px $very-light-gray;
+      margin-bottom: 1em;
+      &::placeholder {
+        color: $white;
+      }
+    }
+  }
+  select {
+    padding: 0.5em;
+    margin: 1em;
+    background: transparent;
+    color: $light-green;
+    outline: none;
+    font-size: 1.3rem;
+  }
+}
+
+// Media queries
+@media screen and (max-width: 960px) {
+  .donation {
+    &__options {
+      @include flex-col(space-between, center);
+    }
+    &__paragraph {
+      text-align: center;
+      margin-bottom: 0.5em;
+    }
+    h1 {
+      text-align: center;
+    }
+    form {
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .donation {
+    // height: 100vh;
+    // width: 100vw;
+
+    &__section {
+      @include flex-col(center, center);
+      h1 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+}

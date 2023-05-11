@@ -1,101 +1,113 @@
 <html lang="en">
-<head>
-  <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-  integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-  crossorigin="anonymous"
-  referrerpolicy="no-referrer"
-/>
+  <head>
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
       integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="css/style.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>donation</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav class="nav">
-            <div class="container">
-              <div class="nav__container">
-                <div class="nav__left">
-                  <img src="images/logo.png" alt="organization logo" width="80">
-                </div>
-                <div class="nav__right">
-                  <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/login.html">Log in</a></li>
-                    <li><a href="/signup.html">Sign Up</a></li>
-                    <li><a href="/donation.html">Donate</a></li>
-                    <li><a href="/contact us.html">Contact Us</a></li>
-                  </ul>
-                </div>
-              </div>
+      <nav class="nav">
+        <div class="container">
+          <div class="nav__container">
+            <div class="nav__left">
+              <img src="images/logo.png" alt="organization logo" width="80" />
             </div>
-          </nav>
+            <div class="nav__right">
+              <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/login.html">Log in</a></li>
+                <li><a href="/signup.html">Sign Up</a></li>
+                <li><a href="/donation.html">Donate</a></li>
+                <li><a href="/contact us.html">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
     </header>
-      <section class="donation__section">
-        <div class="donation">
-        
-    <h1>Donate,Change a life!</h1>
-    <p>We appreciate whatever you contribute.</p>
-    <form>
-        <div class="donation__name">
-    <p>Name</p>
-    <input type="text" placeholder="Enter your name" required>
-   </div>
-    <div class="donation__email" >
-        <p>Email</p>
-    <input type="email" name="Email" placeholder="Enter your email" id="#" required>
-    </div>
-    <div class="donation__options">
+    <section class="donation__section">
+      <div class="donation">
+        <h1>Donate,Change a life!</h1>
+        <p class="donation__paragraph">We appreciate whatever you contribute.</p>
+        <form>
+          <div class="donation__name">
+            <p>Name</p>
+            <input type="text" placeholder="Enter your name" required />
+          </div>
+          <div class="donation__email">
+            <p>Email</p>
+            <input
+              type="email"
+              name="Email"
+              placeholder="Enter your email"
+              id="#"
+              required
+            />
+          </div>
+          <div class="donation__options">
+            <div class="donation__programmes">
             <label>Specify programme</label>
             <select>
-            <option>School fees</option>
-            <option>Football</option>
-            <option>Sponsorship</option>
+              <option>School fees</option>
+              <option>Football</option>
+              <option>Sponsorship</option>
             </select>
+            </div>
+            <div>
             <label>Contributing via</label>
             <select>
-            <option>M-pesa</option>
-            <option>Bank Cheque</option>
-            <option>Parcel delivery</option>
+              <option>M-pesa</option>
+              <option>Bank Cheque</option>
+              <option>Parcel delivery</option>
             </select>
+            </div>
+          </div>
+          <div class="donation__comment">
+            <p>Comment</p>
+            <textarea
+              name="Comment"
+              placeholder="Place your Comment"
+              id=""
+              cols="50"
+              rows="10"
+            ></textarea>
+          </div>
+          <div class="donation__button">
+            <button><a href="">Donate</a></button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <footer class="footer">
+      <div>
+        <p>Rafat Foundation</p>
+        <p>
+          P.O.Box: 76393 - 00508 <br />
+
+          Nairobi, Kenya
+        </p>
+        <p><i class="fa-solid fa-phone"></i> TELL: +254769661795</p>
+
+        <div class="footer__icons">
+          <div class="footer__icon"><i class="fa-brands fa-instagram"></i></div>
+          <div class="footer__icon"><i class="fa-brands fa-facebook"></i></div>
+          <div class="footer__icon"><i class="fa-brands fa-twitter"></i></div>
         </div>
-        <div class="donation__comment">
-       <p> Comment</p>
-    <textarea name="Comment" placeholder="Place your Comment" id="" cols="50" rows="10"></textarea>
-    </div>
-    <div class="donation__button">
-    <button>Donate</button>
-    </div>
-    </form>
-    
-</div>
-</section>
-<footer class="footer">
-  <div>
-    <p>Rafat Foundation</p>
-    <p>
-      P.O.Box: 76393 - 00508 <br />
-
-      Nairobi, Kenya
-    </p>
-    <p><i class="fa-solid fa-phone"></i> TELL: +254769661795</p>
-
-    <div class="footer__icons">
-      <div class="footer__icon"><i class="fa-brands fa-instagram"></i></div>
-      <div class="footer__icon"><i class="fa-brands fa-facebook"></i></div>
-      <div class="footer__icon"><i class="fa-brands fa-twitter"></i></div>
-    </div>
-  </div>
-</footer>
-
-</body>
+      </div>
+    </footer>
+  </body>
 </html>
