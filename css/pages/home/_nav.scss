@@ -2,7 +2,14 @@
 @use "../../utilities/variables" as *;
 
 .nav {
+
   background-color:$lightcyan;
+
+
+  background-color:$lightcyan;
+  @include flex-col(center, center);
+  
+
   position: fixed;
   width: 100%;
   top: 0;
@@ -37,3 +44,4 @@
     }
   }
 }
+
