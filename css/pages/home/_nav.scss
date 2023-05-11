@@ -1,9 +1,11 @@
 @use "../../utilities/mixins" as *;
 @use "../../utilities/variables" as *;
 
-.nav 
+.nav {
+
   background-color:$lightcyan;
-  background-color: gray;
+  @include flex-col(center, center);
+  
 
   position: fixed;
   width: 100%;
@@ -39,3 +41,4 @@
     }
   }
 }
+
