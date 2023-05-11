@@ -1,7 +1,7 @@
 @use "../../utilities/variables" as *;
 @use "../../utilities/mixins" as *;
 .contact {
-  margin-top: 7em;
+  margin-top: 14vh;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("/images/img-6.jpg") no-repeat center center/cover;
     background-attachment: fixed;
