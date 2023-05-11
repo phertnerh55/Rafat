@@ -96,7 +96,8 @@ a {
 }
 
 .nav {
-  background-color: gray;
+  background-color: rgb(224, 255, 255);
+ 
   position: fixed;
   width: 100%;
   top: 0;
@@ -119,8 +120,10 @@ a {
   margin: 1em;
 }
 .nav__right ul li {
-  padding: 2em;
+  padding: 1em;
   font-size: 1rem;
+  margin-right: 1em;
+  border-radius: 5px;
 }
 .nav__right ul li a {
   color: #000;
@@ -357,7 +360,7 @@ a {
 }
 
 .footer {
-  background-color: rgb(23, 189, 50);
+  background-color: rgb(224, 255, 255);
   text-align: center;
 }
 .footer__icons {
@@ -386,7 +389,6 @@ a {
 .contact p {
   font-size: 1.5rem;
   color: #fff;
-  text-align: center;
 }
 .contact h1 {
   font-size: 5rem;

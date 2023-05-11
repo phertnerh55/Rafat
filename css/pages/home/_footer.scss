@@ -1,7 +1,7 @@
 @use "../../utilities/mixins" as *;
 @use "../../utilities/variables" as *;
 .footer {
-  background-color: $light-green;
+  background-color: $lightcyan;
   text-align: center;
   &__icons {
     @include flex(center, center);
