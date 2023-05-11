@@ -4,22 +4,24 @@
   margin-top: 14vh;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("/images/img-6.jpg") no-repeat center center/cover;
-    background-attachment: fixed;
+  background-attachment: fixed;
 
   height: 100vh;
   &__container {
     @include flex-col(center, center);
+    &__p {
+      text-align: center !important;
+    }
   }
+
   p {
     font-size: 1.5rem;
     color: $white;
-  
   }
   h1 {
     font-size: 5rem;
     color: white;
     text-align: center;
-    
   }
   form {
     border-radius: 5px;
@@ -27,8 +29,8 @@
 
     padding: 1em;
     margin: 1em;
-    p{
-      margin: 1em 0 .5em 0;
+    p {
+      margin: 1em 0 0.5em 0;
     }
     textarea {
       background: transparent;
@@ -46,29 +48,15 @@
     }
   }
   &__button {
-    background-color: white;
-    font-size: 1rem;
-    padding: 1em;
-    border-radius: 5px;
-    width: 25%;
-    margin: 2em auto;
-    text-align: center;
-    
     button {
-      background-color: white;
-      color: $black;
-      border: none;
-      
-    
-
-    }
-
-    &:hover {
-      background-color: $light-green;
+      @include button;
+      margin-top: 1em;
       cursor: pointer;
-      button {
+      &:hover {
         background-color: $light-green;
-        cursor: pointer;
+        a {
+          color: $white;
+        }
       }
     }
   }
@@ -86,6 +74,30 @@
     // margin-top: 1em;
     &::placeholder {
       color: $white;
+    }
+  }
+}
+
+// Media queries
+// @media screen and (max-width: 960px) {
+  // .contact {
+    // form {
+      // width: 70%;
+    // }
+  // }
+// }
+
+@media screen and (max-width: 618px) {
+  .contact {
+    form {
+      width: 80%;
+    }
+
+    h1 {
+      font-size: 2rem;
+    }
+    p {
+      font-size: 0.8rem;
     }
   }
 }
