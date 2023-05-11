@@ -45,8 +45,12 @@
   }
 }
 
+
 .nav ul li:last-child{
   display: none;
+}
+.hambergur{
+  cursor: pointer;
 }
 
 /*media queries*/
