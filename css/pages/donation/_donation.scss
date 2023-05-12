@@ -11,7 +11,7 @@
   &__section {
     @include flex-col(center, center);
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),
-      url(/images/donation3.jpg) no-repeat center center/cover;
+      url(https://raw.githubusercontent.com/phertnerh55/Rafat/development/images/donation3.jpg) no-repeat center center/cover;
     background-attachment: fixed;
     color: $white;
     // height: 100vh;
