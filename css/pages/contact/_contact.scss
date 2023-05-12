@@ -34,7 +34,6 @@
     }
     textarea {
       background: transparent;
-      text-align: center;
       outline: none;
       font-size: 1rem;
       color: $white;
@@ -80,11 +79,11 @@
 
 // Media queries
 // @media screen and (max-width: 960px) {
-  // .contact {
-    // form {
-      // width: 70%;
-    // }
-  // }
+// .contact {
+// form {
+// width: 70%;
+// }
+// }
 // }
 
 @media screen and (max-width: 618px) {
